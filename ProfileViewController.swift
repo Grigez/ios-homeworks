@@ -14,10 +14,10 @@ class ProfileViewController: UIViewController {
 
         if let profileView = Bundle.main.loadNibNamed("ProfileView", owner: nil, options: nil)?.first as?
             ProfileView {
-            
-            profileView.frame = CGRect(x: 15, y: 15, width: view.bounds.width - 30, height: 600)
+
+            profileView.frame = CGRect(x: 15, y: 15, width: view.bounds.width - 30, height: 375)
             view.addSubview(profileView)
-        
+
         }
     }
 }
