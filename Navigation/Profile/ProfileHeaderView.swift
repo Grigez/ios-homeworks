@@ -9,12 +9,17 @@ import UIKit
 
 class ProfileHeaderView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+    private lazy var imageView: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "Photo"))
+        return imageView
+    } ()
 
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addSubview(imageView)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

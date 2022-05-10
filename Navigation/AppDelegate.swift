@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         feedViewController.view.backgroundColor = UIColor.white
         
         let profileViewController = ProfileViewController()
-        profileViewController.view.backgroundColor = UIColor.white
         
         let feedNavigationController = UINavigationController(rootViewController: feedViewController)
         
