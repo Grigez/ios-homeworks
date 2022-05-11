@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         feedNavigationController.navigationBar.titleTextAttributes = [ .foregroundColor: UIColor.white]
        
         profileNavigationController.tabBarItem = UITabBarItem(title: "Профиль", image: UIImage(named: "Profile"), selectedImage: UIImage(named: "SelectedProfile"))
-        profileNavigationController.navigationBar.titleTextAttributes = [ .foregroundColor: UIColor.white]
+        profileNavigationController.navigationBar.titleTextAttributes = [ .foregroundColor: UIColor.black]
         
         tabBarController.viewControllers = [feedNavigationController, profileNavigationController]
         tabBarController.tabBar.isHidden = false
@@ -40,6 +40,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = tabBarController
 
         self.window?.makeKeyAndVisible()
+        
+        if #available(iOS 13.0, *) {
+            let tabBarAppearance: UITabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithDefaultBackground()
+            UITabBar.appearance().standardAppearance = tabBarAppearance
+
+            if #available(iOS 15.0, *) {
+                UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+            }
+        }
+        
+        if #available(iOS 13.0, *) {
+            let navBarAppearance: UINavigationBarAppearance = UINavigationBarAppearance()
+            navBarAppearance.configureWithDefaultBackground()
+            UINavigationBar.appearance().standardAppearance = navBarAppearance
+
+            if #available(iOS 15.0, *) {
+                UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+            }
+        }
         
         return true
     }
