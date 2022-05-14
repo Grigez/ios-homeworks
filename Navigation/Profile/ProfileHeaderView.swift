@@ -44,8 +44,8 @@ class ProfileHeaderView: UIView {
     } ()
     
     @objc func buttonPressed() {
-        
-        }
+        statusLabel.text = "Актуальный статус"
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
