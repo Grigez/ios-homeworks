@@ -11,6 +11,7 @@ class ProfileHeaderView: UIView {
 
     private lazy var avatarImageView: UIImageView = {
         let avatarImageView = UIImageView(image: UIImage(named: "Photo"))
+        avatarImageView.translatesAutoresizingMaskIntoConstraints = false
         avatarImageView.layer.masksToBounds = true
         avatarImageView.layer.cornerRadius = 75
         avatarImageView.layer.borderWidth = 3
@@ -20,6 +21,7 @@ class ProfileHeaderView: UIView {
     
     private lazy var fullNameLabel: UILabel = {
         let fullNameLabel = UILabel()
+        fullNameLabel.translatesAutoresizingMaskIntoConstraints = false
         fullNameLabel.text = "Дмитрий Григорьев"
         fullNameLabel.textColor = UIColor.black
         fullNameLabel.font = .systemFont(ofSize: 18, weight: .bold)
@@ -28,6 +30,7 @@ class ProfileHeaderView: UIView {
     
     private lazy var statusLabel: UILabel = {
         let statusLabel = UILabel()
+        statusLabel.translatesAutoresizingMaskIntoConstraints = false
         statusLabel.text = "Ожидание статуса..."
         statusLabel.textColor = UIColor.gray
         statusLabel.font = .systemFont(ofSize: 14, weight: .regular)
@@ -36,11 +39,13 @@ class ProfileHeaderView: UIView {
     
     private lazy var statusTextField: UIControl = {
         let statusTextField = UIControl()
+        statusTextField.translatesAutoresizingMaskIntoConstraints = false
         return statusTextField
     } ()
     
     private lazy var setStatusButton: UIButton = {
         let setStatusButton = UIButton()
+        setStatusButton.translatesAutoresizingMaskIntoConstraints = false
         setStatusButton.setTitle("Актуальный статус", for: .normal)
         setStatusButton.backgroundColor = UIColor.blue
         setStatusButton.titleLabel?.textColor = .white
@@ -58,15 +63,10 @@ class ProfileHeaderView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(avatarImageView)
-        avatarImageView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(fullNameLabel)
-        fullNameLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(statusLabel)
-        statusLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(statusTextField)
-        statusTextField.translatesAutoresizingMaskIntoConstraints = false
         addSubview(setStatusButton)
-        setStatusButton.translatesAutoresizingMaskIntoConstraints = false
      
         NSLayoutConstraint.activate([
             avatarImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),

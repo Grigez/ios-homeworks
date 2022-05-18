@@ -11,11 +11,13 @@ class ProfileViewController: UIViewController {
 
     private lazy var profileHeaderView: ProfileHeaderView = {
         let profileHeaderView = ProfileHeaderView()
+        profileHeaderView.translatesAutoresizingMaskIntoConstraints = false
         return profileHeaderView
     } ()
     
     private lazy var newButton: UIButton = {
         let newButton = UIButton()
+        newButton.translatesAutoresizingMaskIntoConstraints = false
         newButton.setTitle("Новая кнопка", for: .normal)
         return newButton
     } ()
@@ -24,10 +26,9 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         title = "Профиль"
         view.backgroundColor = .lightGray
-        profileHeaderView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(profileHeaderView)
-        newButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(newButton)
+        
         NSLayoutConstraint.activate([
             profileHeaderView.leftAnchor.constraint(equalTo: view.leftAnchor),
             profileHeaderView.rightAnchor.constraint(equalTo: view.rightAnchor),
