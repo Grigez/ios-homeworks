@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController {
     private lazy var profileHeaderView: ProfileHeaderView = {
         let profileHeaderView = ProfileHeaderView()
         profileHeaderView.translatesAutoresizingMaskIntoConstraints = false
+        profileHeaderView.backgroundColor = .green
         return profileHeaderView
     } ()
     
@@ -33,7 +34,7 @@ class ProfileViewController: UIViewController {
             profileHeaderView.leftAnchor.constraint(equalTo: view.leftAnchor),
             profileHeaderView.rightAnchor.constraint(equalTo: view.rightAnchor),
             profileHeaderView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            profileHeaderView.heightAnchor.constraint(equalToConstant: 220)
+            profileHeaderView.heightAnchor.constraint(equalToConstant: 240)
         ])
         
         NSLayoutConstraint.activate([
