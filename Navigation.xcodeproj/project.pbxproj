@@ -15,6 +15,7 @@
 		7523293327BE5E4E004E2B52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523293227BE5E4E004E2B52 /* SceneDelegate.swift */; };
 		7523293527BE5E4E004E2B52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523293427BE5E4E004E2B52 /* ViewController.swift */; };
 		7523293A27BE5E4F004E2B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7523293927BE5E4F004E2B52 /* Assets.xcassets */; };
+		754B45F2283D5F5C00B613C8 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754B45F1283D5F5C00B613C8 /* LogInViewController.swift */; };
 		75557BDE282AD775003B9871 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75557BDD282AD775003B9871 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		7523293427BE5E4E004E2B52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7523293927BE5E4F004E2B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7523293E27BE5E4F004E2B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754B45F1283D5F5C00B613C8 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		75557BDD282AD775003B9871 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 			children = (
 				75557BDD282AD775003B9871 /* ProfileHeaderView.swift */,
 				750EB18A27C64F54003D0F8B /* ProfileViewController.swift */,
+				754B45F1283D5F5C00B613C8 /* LogInViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			files = (
 				750EB18F27C64FA2003D0F8B /* PostViewController.swift in Sources */,
 				7523293527BE5E4E004E2B52 /* ViewController.swift in Sources */,
+				754B45F2283D5F5C00B613C8 /* LogInViewController.swift in Sources */,
 				7523293127BE5E4E004E2B52 /* AppDelegate.swift in Sources */,
 				750EB19127C64FB7003D0F8B /* InfoViewController.swift in Sources */,
 				750EB18D27C64F71003D0F8B /* FeedViewController.swift in Sources */,
