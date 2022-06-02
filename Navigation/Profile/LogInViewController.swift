@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LogInViewController: UIView {
+class LogInViewController: UIViewController {
 
    
 
